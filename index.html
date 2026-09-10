@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Planner Perfeito de Estudos 🌷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-flourish bg-flourish--top" aria-hidden="true"></div>
+<div class="bg-flourish bg-flourish--bottom" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <p class="eyebrow">meu planner perfeito de</p>
+    <h1>Estudos</h1>
+    <p class="tagline">um lugar só seu pra organizar disciplinas, provas e as técnicas que estão funcionando pra você.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="add-card" id="add-card">
+    <button class="add-card__toggle" id="toggle-form" aria-expanded="false" aria-controls="disciplina-form">
+      <span class="add-card__icon">＋</span>
+      <span>Adicionar disciplina</span>
+    </button>
+
+    <form id="disciplina-form" class="disciplina-form" hidden>
+      <div class="field">
+        <label for="nome-disciplina">Disciplina</label>
+        <input type="text" id="nome-disciplina" placeholder="Ex: Estrutura de Dados" required>
+      </div>
+      <div class="field">
+        <label for="data-prova">Data da prova</label>
+        <input type="date" id="data-prova" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary">Criar disciplina</button>
+        <button type="button" class="btn btn--ghost" id="cancel-form">Cancelar</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="empty-state" class="empty-state" hidden>
+    <p class="empty-state__emoji">📖</p>
+    <p>Nenhuma disciplina cadastrada ainda.</p>
+    <p class="empty-state__sub">Adicione a primeira e comece a se programar pras provas.</p>
+  </section>
+
+  <section id="disciplinas-grid" class="disciplinas-grid" aria-live="polite"></section>
+
+</main>
+
+<template id="disciplina-card-template">
+  <article class="card" data-id="">
+    <button class="card__delete" title="Excluir disciplina" aria-label="Excluir disciplina">×</button>
+    <div class="card__header">
+      <h2 class="card__title"></h2>
+      <p class="card__countdown"></p>
+    </div>
+
+    <div class="card__progress">
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="card__progress-label"></p>
+    </div>
+
+    <button class="card__expand-toggle">
+      <span class="topics-count"></span>
+      <span class="chevron">⌄</span>
+    </button>
+
+    <div class="card__body" hidden>
+      <ul class="topics-list"></ul>
+
+      <form class="topic-form">
+        <input type="text" class="topic-input" placeholder="Novo tópico ou conteúdo" required>
+        <select class="topic-tecnica">
+          <option value="">Técnica usada (opcional)</option>
+          <option value="Cornell">Método Cornell</option>
+          <option value="Pomodoro">Pomodoro</option>
+          <option value="Feynman">Técnica de Feynman</option>
+          <option value="Repetição espaçada">Repetição espaçada</option>
+          <option value="Mapa mental">Mapa mental</option>
+          <option value="Outra">Outra</option>
+        </select>
+        <button type="submit" class="btn btn--small">Adicionar</button>
+      </form>
+    </div>
+  </article>
+</template>
+
+<template id="topic-item-template">
+  <li class="topic-item">
+    <label class="topic-item__check">
+      <input type="checkbox">
+      <span class="topic-item__name"></span>
+    </label>
+    <span class="topic-item__tecnica"></span>
+    <button class="topic-item__remove" aria-label="Remover tópico">×</button>
+  </li>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
