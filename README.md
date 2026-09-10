@@ -1,10 +1,12 @@
 ## 🌷 Meu Planner Perfeito de Estudos
 
-Um app para organizar disciplinas, provas e as técnicas de estudo que estão funcionando (ou não) pra você — porque nem sempre o problema é *quanto* se estuda, mas *como*.
+Previsualize no link a seguir: https://uaijulia.github.io/Meu-planner-de-estudos-perfeito-/
 
-### 💭 Por que criei isso
+Um app para organizar disciplinas, provas e as técnicas de estudo que estão funcionando (ou não) pra você - afinal de contas, nem sempre o problema é *quanto* se estuda, mas *como*.
 
-Faz parte da minha proposta de desenvolver projetos práticos que resolvam problemas reais. Como estudante de Análise e Desenvolvimento de Sistemas, sentia falta de um lugar só meu pra registrar não só o que preciso estudar, mas também qual técnica apliquei em cada conteúdo — e ver isso influenciando meu progresso.
+### 💭 Por que criei isso?
+
+Faz parte da minha proposta de desenvolver projetos práticos que resolvam problemas reais. Como estudante de Análise e Desenvolvimento de Sistemas, sentia falta de um lugar só meu pra registrar não só o que preciso estudar, mas também qual técnica apliquei em cada conteúdo, e ver isso influenciando meu progresso.
 
 ### ✨ Funcionalidades
 
@@ -16,14 +18,14 @@ Faz parte da minha proposta de desenvolver projetos práticos que resolvam probl
 
 ### 🎨 Identidade visual
 
-Paleta pastel floral, em tons de rosa e creme — a mesma identidade que uso nos meus outros materiais de estudo. Tipografia serifada (Fraunces) nos títulos e uma sans-serif limpa (Karla) no corpo do texto.
+Paleta pastel, em tons de rosa e creme, a mesma identidade visual que uso nos meus outros materiais de estudo e projetos particulares. Tipografia serifada (Fraunces) nos títulos e uma sans-serif limpa (Karla) no corpo do texto.
 
 ### 🛠️ Tecnologias
 
 * HTML
 * CSS
 * JavaScript (vanilla)
-* Armazenamento local via `localStorage` — sem backend
+* Armazenamento local via `localStorage` sem backend
 
 ### 🚀 Como usar
 
@@ -31,11 +33,11 @@ Paleta pastel floral, em tons de rosa e creme — a mesma identidade que uso nos
 2. Abra o arquivo `index.html` no navegador
 3. Comece a cadastrar suas disciplinas e provas
 
-Não precisa de instalação nem de servidor — é só abrir e usar.
+Não precisa de instalação nem de servidor, é só abrir e usar.
 
 ### 📸 Prévia
 
-*(adicionar aqui um print ou GIF do app em uso)*
+*(preciso adicionar aqui uma imagem da  aplicação)*
 
 ### 🌱 Próximos passos
 
